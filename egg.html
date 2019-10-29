@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🐼</title>
+    <!-- FONT AWESOME EMBED CODE FROM SUZETTE - THANK YOU SUZETTE! -->
+    <script src="https://kit.fontawesome.com/276b65d818.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Offside&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <div class="giphy">
+        <p>GIPHYS CAUSE WHY NOT!!!</p>
+        <img id="imageid" src="">
+        <p>REFRESH FOR MORE 😍😍😍!!!</p>
+    </div>
+
+    <script>
+        // TOOK THIS CODE FROM STACKOVERFLOW.COM
+        function randomImg() {
+                let randomNumber = Math.floor(Math.random() * (8 - 1)) + 1;
+                let imgName = "panda_gif_" + randomNumber + ".gif";
+                document.getElementById("imageid").src = "assets" + "/" + imgName;
+            }
+        
+        randomImg();
+    </script>
+</body>
+
+</html>
