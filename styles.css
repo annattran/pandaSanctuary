@@ -87,11 +87,16 @@ h2 {
     color:white;
 }
 
-h3, .link i {
+.link i {
+    font-size:6rem;
+}
+
+h3 {
     font-size:4.2rem;
 }
 
 h4 {
+    font-size:3rem;
     padding-bottom: 10px;
 }
 
@@ -156,6 +161,7 @@ nav ul {
 /* BOTTOM NAVIGATION */
 .bottom-nav {
     text-transform:lowercase;
+    font-size:3rem;
 }
 
 .bottom-nav li {
@@ -218,6 +224,7 @@ button {
     font-family: 'Offside', cursive;
     text-align: center;
     border:none;
+    transition: all .3s;
 }
 
 /* READ MORE BUTTON */
@@ -229,10 +236,6 @@ button {
     display:inline-block;
     /* ACCEPT DIMENSIONS */
     padding:10px 15px;
-}
-
-.green-btn, .white-btn {
-    transition: all .3s;
 }
 .green-btn {
     background:#116500;
@@ -254,7 +257,7 @@ button {
 
 /* FORM STYLES ----------------------------------- */
 form {
-    margin-top:25px;
+    margin-top:15px;
 }
 
 input[type=email] {
@@ -327,11 +330,15 @@ header {
 
 .about-gallery li {
     float:left;
-    width:calc((100% - 40px)/ 3);
+    width:calc((100% - 100px) / 3);
 }
 
 .about-gallery li:nth-of-type(2) {
-    margin: 0px 20px;
+    margin: 0px 50px;
+}
+
+.about-gallery img {
+    width: 100%;
 }
 
 /* ABOUT-CONTENT */
@@ -354,7 +361,7 @@ header {
 /* STYLES FOR PANDAS SECTION ----------------------------------- */
 .pandas {
     background:#213C28;
-    color:#D6F1E4;
+    color:#FFF;
 }
 
 .pandas .wrapper {
@@ -426,7 +433,7 @@ header {
 /* FOOTER STYLES ----------------------------------- */
 footer {
     background:#213C28;
-    color:#D6F1E4;
+    color:#FFF;
 }
 
 footer .wrapper {
@@ -457,7 +464,7 @@ footer .wrapper {
 
 .copyright {
     background:#2C2D2C;
-    color:#D6F1E4;
+    color:#FFF;
     text-align:center;
     padding:10px 0px;
     clear:both;
@@ -487,6 +494,9 @@ footer .wrapper {
     h3 {
         font-size:3.8rem;
     }
+    h4, .bottom-nav {
+        font-size:2.6rem;
+    }
     p {
         font-size:1.8rem;
     }
@@ -508,8 +518,8 @@ footer .wrapper {
     h3 {
         font-size:3.4rem;
     }
-    p {
-        font-size:1.6rem;
+    h4, .bottom-nav {
+        font-size:2.2rem;
     }
     .top-nav a {
         font-size:1.8rem;
@@ -564,13 +574,19 @@ footer .wrapper {
     label[for="hamburger"] {
         position:fixed;
         top:10px;
-        right:10px;
+        right:20px;
         cursor:pointer;
         display:block;
         /* DISAPPEAR TO APPEAR */
         z-index:3;
     }
     /* OTHER STYLES */
+    .wrapper {
+        width: 90%;
+    }
+    .header-bottom {
+        width: 100%;
+    }
     .about {
         padding-bottom:50px;
     }
@@ -642,12 +658,6 @@ footer .wrapper {
     header {
         height:70vh;
     }
-    h1 {
-        font-size:1.6rem;
-    }
-    h2 {
-        font-size:3rem;
-    }
     h3 {
         font-size:2.6rem;
     }
@@ -682,7 +692,7 @@ footer .wrapper {
         margin:0 auto;
     }
     input[type=email] {
-        margin: 20px 0px 10px 0px;
+        margin-bottom: 10px;
         width:100%;
         text-align:center;
     }
@@ -692,6 +702,10 @@ footer .wrapper {
 /* HOVER STYLES ------------------------------------- */
 a:hover {
     color:rgba(255,255,255,.5);
+}
+
+.link a:hover {
+    color:#2C2D2C;
 }
 
 .green-btn:hover {
@@ -713,6 +727,11 @@ a:hover {
 a.egg:hover {
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎁</text></svg>") 16 0,auto; 
     /*emojicursor.app*/
+}
+
+.subscribe-btn:hover {
+    background:white;
+    color:#2C2D2C;
 }
 
 
